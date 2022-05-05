@@ -53,3 +53,11 @@ For e.g. if you decide to declare the go directive in `employee/employee.go` the
 ```
 
 IMHO, it is better to keep all the //go:generate directive in a common file like main.go so that it is easy to manage all at one place.
+
+References:
+
+* go:generate - https://go.dev/blog/generate
+* `$ go help generate`
+* grpc.io - https://grpc.io/docs/languages/go/quickstart/
+* protocol buffers - https://developers.google.com/protocol-buffers/docs/gotutorial 
+* protoc - `protoc` installer artifacts https://github.com/protocolbuffers/protobuf/releases
