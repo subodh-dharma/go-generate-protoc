@@ -1,0 +1,24 @@
+syntax = "proto3";
+package employee;
+option go_package = "./employee";
+
+message Employee {
+    int64 Id = 1;
+    string Name = 2;
+    string Department = 3;
+}
+
+message EmployeeRequest {
+    int64 Id = 1;
+}
+
+message EmployeeResponse {
+    int64 Id = 1;
+    string Name = 2;
+    string Department = 3;
+}
+service EmployeeService {
+    rpc GetById(EmployeeRequest) returns (EmployeeResponse);
+    rpc GetDepartment(EmployeeRequest) returns (EmployeeResponse);
+}
+
